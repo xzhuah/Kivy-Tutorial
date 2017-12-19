@@ -1,0 +1,21 @@
+# File name: SimpleInterface.py
+#: kivy 1.8.0
+
+<Button>:
+    font_size: 30
+    color: 0,1,0,1
+    size_hint: 0.2,0.1
+
+
+<MyFloat>:
+    Button:
+        text:"Btn 1"
+        pos_hint:{"x":0.2,"y":0.4}
+        on_release: root.myfunction(self)
+
+
+
+    MyButton:
+        text:"Btn 2"
+        pos_hint:{"x":0.6,"y":0.4}
+
